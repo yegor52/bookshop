@@ -1,0 +1,27 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-brown: #71461B;
+  --color-orange: #E4913E;
+  --color-blue: #A6D4D4;
+  --color-red: #B93B3B;
+  --color-thin-orange: #D4C5A6;
+
+  --color-gray-1: #F2F2F2;
+  --color-gray-2: #DFDFDF;
+  --color-container: #EEEEEE;
+
+
+  --border-fault: 6px solid var(--color-gray-2);
+  --border-active: 6px solid var(--color-orange);
+  --border-count: 2px solid var(--color-black);
+  --border-button: 2px solid var(--color-orange);
+
+  --border-radius-input: 25px;
+  --border-radius-container: 15px;
+
+  --input-height: 40px;
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,19 @@
+.image-reg {
+    width: 40%;
+    flex-shrink: 0;
+    background-image: url('../../app/assets/images/reg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.entry-reg {
+    padding-bottom: 20px;
+}
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    margin: 12px 0;
+    font-weight: 500;
+}

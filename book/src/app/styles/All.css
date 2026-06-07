@@ -1,0 +1,22 @@
+.hPage {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    background-color: var(--color-gray-1);
+}
+
+.name-page {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.card {
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: var(--color-container);
+    border-radius: var(--border-radius-container);
+}
+
+.about {
+    justify-content: center;
+}

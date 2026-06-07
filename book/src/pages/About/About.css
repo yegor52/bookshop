@@ -1,0 +1,42 @@
+
+.about-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+} 
+
+.card-book {
+    display: grid;
+    gap: 40px;
+    max-width: 700px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.description {
+    display: grid;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.descript {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.description-text {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.athers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}

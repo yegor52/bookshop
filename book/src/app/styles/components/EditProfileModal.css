@@ -1,0 +1,101 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--color-gray-1);
+    padding: 30px;
+    border-radius: var(--border-radius-input);
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+.modal-form-group {
+    margin-bottom: 20px;
+}
+
+.modal-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.modal-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: var(--border-fault);
+    border-radius: var(--border-radius-container);
+    font-size: 20px;
+}
+
+.modal-form-group input:focus {
+    outline: none;
+    border: var(--border-active);
+}
+
+.modal-form-group input:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+}
+
+.modal-form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 16px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.modal-cancel-btn,
+.modal-save-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius-container);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--color-black);
+}
+
+.modal-cancel-btn {
+    background-color: var(--color-gray-1);
+    border: var(--border-button);
+}
+
+.modal-cancel-btn:hover {
+    background-color: var(--color-blue);
+    border: var(--border-count);
+}
+
+.modal-save-btn {
+    background-color: var(--color-orange);
+}
+
+.modal-save-btn:hover {
+    background-color: var(--color-blue)
+}

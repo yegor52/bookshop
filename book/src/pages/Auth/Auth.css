@@ -1,0 +1,250 @@
+.image-auth {
+    width: 40%;
+    flex-shrink: 0;
+    background-image: url('../../app/assets/images/auth.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.entry-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-brown);
+}
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.info-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.info-modal {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 28px 16px 28px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.info-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.info-modal-close {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.info-modal-close:hover {
+    background-color: #f5f5f5;
+    color: #333;
+    border-color: #ccc;
+}
+
+.info-modal-body {
+    padding: 24px 28px;
+}
+
+.info-developer {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    min-width: 100px;
+}
+
+.info-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.info-description {
+    margin-bottom: 24px;
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+.info-accounts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.info-account {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    transition: background-color 0.2s ease;
+}
+
+.info-account:hover {
+    background-color: #f0f0f0;
+}
+
+.info-account-role {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.info-account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-account-login,
+.info-account-password {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--color-orange);
+}
+
+.info-modal-footer {
+    padding: 20px 28px 24px 28px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.info-modal-btn {
+    padding: 12px 32px;
+    min-width: 140px;
+    background-color: var(--color-orange);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.info-modal-btn:hover {
+    background-color: #333;
+    transform: translateY(-1px);
+}
+
+.info-modal-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .info-modal {
+        max-width: 95%;
+        border-radius: 16px;
+    }
+    
+    .info-modal-header {
+        padding: 18px 20px 12px 20px;
+    }
+    
+    .info-modal-title {
+        font-size: 18px;
+    }
+    
+    .info-modal-body {
+        padding: 18px 20px;
+    }
+    
+    .info-developer {
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .info-label {
+        min-width: auto;
+    }
+    
+    .info-account-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .info-modal-footer {
+        padding: 16px 20px 20px 20px;
+    }
+    
+    .info-modal-btn {
+        padding: 10px 28px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+}

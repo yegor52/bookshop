@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: start; */
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-white);
+  padding-bottom: 20px;
+}
+
+input,
+label,
+button {
+  transition-duration: var(--transition-duration);
+}
